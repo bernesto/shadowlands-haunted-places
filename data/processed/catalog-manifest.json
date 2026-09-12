@@ -1,0 +1,9 @@
+{
+  "schemaVersion": 1,
+  "updatedAt": "2026-09-11T00:00:00.000Z",
+  "recordCount": 10992,
+  "csvUrl": "https://raw.githubusercontent.com/bernesto/shadowlands-haunted-places/master/data/processed/haunted_places.csv",
+  "source": "Shadowlands Haunted Places Index",
+  "compiledBy": "Tim Renner",
+  "distribution": "TidyTuesday 2023-10-10"
+}
