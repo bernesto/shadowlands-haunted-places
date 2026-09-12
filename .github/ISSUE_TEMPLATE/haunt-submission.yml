@@ -1,0 +1,52 @@
+name: Haunt report
+description: Submit a public or permission-authorized location for catalog review.
+title: "[Haunt report]: "
+labels: ["community-report", "needs-review"]
+body:
+  - type: markdown
+    attributes:
+      value: Thanks for contributing. Do not publish private-home addresses, precise locations involving minors, or locations you cannot lawfully access.
+  - type: input
+    id: name
+    attributes:
+      label: Location name
+    validations:
+      required: true
+  - type: input
+    id: city
+    attributes:
+      label: City, region, and country
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: Access status
+      options:
+        - Public place
+        - Ticketed public venue
+        - Private property with documented permission
+        - Research only - not a field destination
+    validations:
+      required: true
+  - type: textarea
+    id: claim
+    attributes:
+      label: Reported history or claim
+      description: Separate witnessed claims from documented historical facts.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources
+      description: Provide URLs, publication names, dates, and any permission reference.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety and privacy
+      options:
+        - label: I have not included a private-home address, sensitive victim information, or an unsafe access recommendation.
+          required: true
